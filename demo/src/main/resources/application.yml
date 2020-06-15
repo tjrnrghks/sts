@@ -26,3 +26,5 @@ spring:  datasource:    driver-class-name: oracle.jdbc.driver.OracleDriver
     show-sql: true
     hibernate:      ddl-auto: update # create 면 시작시 생성, update 면 변동사항 갱신. 
      
+     
+  
