@@ -24,7 +24,7 @@ spring:  datasource:    driver-class-name: oracle.jdbc.driver.OracleDriver
 #jpa 설정
   jpa:    database: oracle
     show-sql: true
-    hibernate:      ddl-auto: update # create 면 시작시 생성, update 면 변동사항 갱신. 
+    hibernate:      ddl-auto: create # create 면 시작시 생성, update 면 변동사항 갱신. 
      
-     
-  
+# swagger 정적 자원 설정
+#  mvc:#    static-path-pattern: /swagger-ui.html

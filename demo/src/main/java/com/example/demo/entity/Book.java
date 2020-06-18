@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -33,9 +36,11 @@ public class Book {
 	private int price;
 	
 	//생성 시각
+	@CreationTimestamp
 	private Timestamp ctime;
 	
 	//수정 시각
+	@UpdateTimestamp
 	private Timestamp utime;
 	
 	
